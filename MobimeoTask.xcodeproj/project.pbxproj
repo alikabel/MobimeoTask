@@ -14,6 +14,11 @@
 		4195CD73226C64C9009933FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4195CD71226C64C9009933FE /* LaunchScreen.storyboard */; };
 		4195CD7E226C64CA009933FE /* MobimeoTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4195CD7D226C64CA009933FE /* MobimeoTaskTests.swift */; };
 		4195CD89226C64CA009933FE /* MobimeoTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4195CD88226C64CA009933FE /* MobimeoTaskUITests.swift */; };
+		4195CD98226C6549009933FE /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4195CD97226C6549009933FE /* NetworkClient.swift */; };
+		4195CD9A226C6562009933FE /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4195CD99226C6562009933FE /* EndpointType.swift */; };
+		4195CD9C226C6598009933FE /* GiphyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4195CD9B226C6598009933FE /* GiphyAPI.swift */; };
+		4195CD9F226C66DC009933FE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4195CD9E226C66DC009933FE /* Constants.swift */; };
+		4195CDA2226C67C5009933FE /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4195CDA1226C67C5009933FE /* Response.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		4195CD84226C64CA009933FE /* MobimeoTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobimeoTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4195CD88226C64CA009933FE /* MobimeoTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobimeoTaskUITests.swift; sourceTree = "<group>"; };
 		4195CD8A226C64CA009933FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4195CD97226C6549009933FE /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		4195CD99226C6562009933FE /* EndpointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
+		4195CD9B226C6598009933FE /* GiphyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyAPI.swift; sourceTree = "<group>"; };
+		4195CD9E226C66DC009933FE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4195CDA1226C67C5009933FE /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,9 @@
 		4195CD67226C64C7009933FE /* MobimeoTask */ = {
 			isa = PBXGroup;
 			children = (
+				4195CDA0226C67AB009933FE /* Model */,
+				4195CD9D226C66C1009933FE /* Utilities */,
+				4195CD96226C6515009933FE /* Networking */,
 				4195CD68226C64C7009933FE /* AppDelegate.swift */,
 				4195CD6A226C64C7009933FE /* ViewController.swift */,
 				4195CD6C226C64C7009933FE /* Main.storyboard */,
@@ -123,6 +136,32 @@
 				4195CD8A226C64CA009933FE /* Info.plist */,
 			);
 			path = MobimeoTaskUITests;
+			sourceTree = "<group>";
+		};
+		4195CD96226C6515009933FE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4195CD97226C6549009933FE /* NetworkClient.swift */,
+				4195CD99226C6562009933FE /* EndpointType.swift */,
+				4195CD9B226C6598009933FE /* GiphyAPI.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4195CD9D226C66C1009933FE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4195CD9E226C66DC009933FE /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4195CDA0226C67AB009933FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4195CDA1226C67C5009933FE /* Response.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +295,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4195CD9A226C6562009933FE /* EndpointType.swift in Sources */,
 				4195CD6B226C64C7009933FE /* ViewController.swift in Sources */,
 				4195CD69226C64C7009933FE /* AppDelegate.swift in Sources */,
+				4195CD98226C6549009933FE /* NetworkClient.swift in Sources */,
+				4195CD9C226C6598009933FE /* GiphyAPI.swift in Sources */,
+				4195CD9F226C66DC009933FE /* Constants.swift in Sources */,
+				4195CDA2226C67C5009933FE /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
