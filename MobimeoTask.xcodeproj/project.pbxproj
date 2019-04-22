@@ -23,6 +23,7 @@
 		4195CDA6226C7FDA009933FE /* OriginalGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4195CDA5226C7FDA009933FE /* OriginalGIF.swift */; };
 		4195CDA8226C806C009933FE /* GiphyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4195CDA7226C806C009933FE /* GiphyList.swift */; };
 		4195CDAA226C83E4009933FE /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4195CDA9226C83E4009933FE /* Images.swift */; };
+		4195CDAD226DA02E009933FE /* GiphyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4195CDAC226DA02E009933FE /* GiphyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		4195CDA5226C7FDA009933FE /* OriginalGIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalGIF.swift; sourceTree = "<group>"; };
 		4195CDA7226C806C009933FE /* GiphyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyList.swift; sourceTree = "<group>"; };
 		4195CDA9226C83E4009933FE /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		4195CDAC226DA02E009933FE /* GiphyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		4195CD67226C64C7009933FE /* MobimeoTask */ = {
 			isa = PBXGroup;
 			children = (
+				4195CDAB226DA00C009933FE /* Cells */,
 				4195CDA0226C67AB009933FE /* Model */,
 				4195CD9D226C66C1009933FE /* Utilities */,
 				4195CD96226C6515009933FE /* Networking */,
@@ -174,6 +177,14 @@
 				4195CDA9226C83E4009933FE /* Images.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4195CDAB226DA00C009933FE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4195CDAC226DA02E009933FE /* GiphyTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +329,7 @@
 				4195CD9C226C6598009933FE /* GiphyAPI.swift in Sources */,
 				4195CD9F226C66DC009933FE /* Constants.swift in Sources */,
 				4195CDA2226C67C5009933FE /* Response.swift in Sources */,
+				4195CDAD226DA02E009933FE /* GiphyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
