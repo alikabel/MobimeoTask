@@ -10,4 +10,6 @@ import Foundation
 
 struct Giphy: Codable {
     let images: Images?
+    let username: String?
+    let rating: String?
 }

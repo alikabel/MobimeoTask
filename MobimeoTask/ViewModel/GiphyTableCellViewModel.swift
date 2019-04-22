@@ -15,9 +15,7 @@ class GiphyTableCellViewModel {
     init(originalImage: OriginalGIF) {
         self.originalImage = originalImage
     }
-    
-    var onGetGIF: (() -> ())?
-    
+        
     func getGiphyImageView(imageView: FLAnimatedImageView?) {
         imageView?.sd_setImage(with: URL(string:originalImage?.url ?? ""))
     }

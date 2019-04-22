@@ -18,6 +18,7 @@ class GiphyTableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView?.dataSource = self
+        tableView?.delegate = self
         giphyTableViewModel = GiphyTableViewModel(newtworkClient: networkClient)
         giphyTableViewModel?.getGiphyList(limit: 25, rating: "G", success: { [weak self] in
             DispatchQueue.main.async {
@@ -43,5 +44,17 @@ extension GiphyTableViewController: UITableViewDataSource {
         return cell
     }
     
-    
+}
+
+// MARK:- UITableViewDelegate
+extension GiphyTableViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let giphyItem = giphyTableViewModel?.items[indexPath.row],
+            let  url = giphyItem.images?.original?.url  else { return }
+        let detailsViewModel = GiphyDetailsViewModel(urlString: url, userName: giphyItem.username ?? "", rating: giphyItem.rating ?? "")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let detailsView = storyboard.instantiateViewController(withIdentifier: "GiphyDetailsViewController") as! GiphyDetailsViewController
+        detailsView.detailsViewModel = detailsViewModel
+        navigationController?.pushViewController(detailsView, animated: true)
+    }
 }

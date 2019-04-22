@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6fY-9S-9kd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -59,11 +59,81 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="HQm-7P-K8D"/>
                     <connections>
                         <outlet property="tableView" destination="1b5-Sx-SOl" id="bTx-HB-Jfb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="102.99850074962519"/>
+        </scene>
+        <!--Giphy Details View Controller-->
+        <scene sceneID="l9S-6E-nOl">
+            <objects>
+                <viewController storyboardIdentifier="GiphyDetailsViewController" id="Y51-eV-yVW" customClass="GiphyDetailsViewController" customModule="MobimeoTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bj9-bl-5qb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="clV-rJ-BTZ" customClass="FLAnimatedImageView">
+                                <rect key="frame" x="16" y="226" width="343" height="214"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="214" id="5oh-wV-4qx"/>
+                                    <constraint firstAttribute="width" constant="343" id="BkL-1L-gsL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dc4-nq-qHC">
+                                <rect key="frame" x="100" y="88" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZA-Se-QLi">
+                                <rect key="frame" x="100" y="530" width="174" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hZA-Se-QLi" firstAttribute="leading" secondItem="xoL-Z5-lS3" secondAttribute="leading" constant="100" id="4XB-wM-kQ5"/>
+                            <constraint firstItem="Dc4-nq-qHC" firstAttribute="leading" secondItem="xoL-Z5-lS3" secondAttribute="leading" constant="100" id="F0P-ZI-qEh"/>
+                            <constraint firstItem="clV-rJ-BTZ" firstAttribute="leading" secondItem="xoL-Z5-lS3" secondAttribute="leading" constant="16" id="GOg-9E-hiN"/>
+                            <constraint firstItem="hZA-Se-QLi" firstAttribute="top" secondItem="clV-rJ-BTZ" secondAttribute="bottom" constant="90" id="dhd-zp-E24"/>
+                            <constraint firstItem="Dc4-nq-qHC" firstAttribute="top" secondItem="xoL-Z5-lS3" secondAttribute="top" constant="68" id="iOD-qt-fKw"/>
+                            <constraint firstItem="xoL-Z5-lS3" firstAttribute="trailing" secondItem="hZA-Se-QLi" secondAttribute="trailing" constant="101" id="vFn-C4-u9A"/>
+                            <constraint firstItem="xoL-Z5-lS3" firstAttribute="trailing" secondItem="clV-rJ-BTZ" secondAttribute="trailing" constant="16" id="xF6-Zs-C8n"/>
+                            <constraint firstItem="clV-rJ-BTZ" firstAttribute="top" secondItem="Dc4-nq-qHC" secondAttribute="bottom" constant="117.5" id="xmT-dS-aQW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xoL-Z5-lS3"/>
+                    </view>
+                    <connections>
+                        <outlet property="giphyImageView" destination="clV-rJ-BTZ" id="asR-21-pNV"/>
+                        <outlet property="ratingLabel" destination="hZA-Se-QLi" id="lYR-Dj-9C9"/>
+                        <outlet property="userNameLabel" destination="Dc4-nq-qHC" id="YCr-iV-1Xv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zVE-fQ-vgU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1751" y="103"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HFx-H8-5GV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6fY-9S-9kd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GCq-eH-xv8">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6fb-t8-ezA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I4O-l4-AvR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="102.99850074962519"/>
         </scene>

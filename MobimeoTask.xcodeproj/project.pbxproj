@@ -26,6 +26,8 @@
 		4195CDAD226DA02E009933FE /* GiphyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4195CDAC226DA02E009933FE /* GiphyTableViewCell.swift */; };
 		4195CDB1226DA287009933FE /* GiphyTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4195CDB0226DA287009933FE /* GiphyTableViewModel.swift */; };
 		4195CDB3226DADAF009933FE /* GiphyTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4195CDB2226DADAF009933FE /* GiphyTableCellViewModel.swift */; };
+		41CF360B226E55BB000C9848 /* GiphyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CF360A226E55BB000C9848 /* GiphyDetailsViewController.swift */; };
+		41CF360D226E56DC000C9848 /* GiphyDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CF360C226E56DC000C9848 /* GiphyDetailsViewModel.swift */; };
 		A100E04B0046A6EAFB063113 /* Pods_MobimeoTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92F3460AD2E1EF07BA221B7 /* Pods_MobimeoTaskTests.framework */; };
 		A93BF4259DC8F086C2238ACE /* Pods_MobimeoTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE435EED15577E1F5BA63CAF /* Pods_MobimeoTaskUITests.framework */; };
 		D5C94DBA0402F8EEC50858A2 /* Pods_MobimeoTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D337A34A3220E17F6BD8FE88 /* Pods_MobimeoTask.framework */; };
@@ -76,6 +78,8 @@
 		4195CDAC226DA02E009933FE /* GiphyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyTableViewCell.swift; sourceTree = "<group>"; };
 		4195CDB0226DA287009933FE /* GiphyTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyTableViewModel.swift; sourceTree = "<group>"; };
 		4195CDB2226DADAF009933FE /* GiphyTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyTableCellViewModel.swift; sourceTree = "<group>"; };
+		41CF360A226E55BB000C9848 /* GiphyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyDetailsViewController.swift; sourceTree = "<group>"; };
+		41CF360C226E56DC000C9848 /* GiphyDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyDetailsViewModel.swift; sourceTree = "<group>"; };
 		B34B575C37DF8293EA6168E2 /* Pods-MobimeoTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobimeoTask.debug.xcconfig"; path = "Target Support Files/Pods-MobimeoTask/Pods-MobimeoTask.debug.xcconfig"; sourceTree = "<group>"; };
 		B82499351C9FA8A4AF8B2FB5 /* Pods-MobimeoTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobimeoTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-MobimeoTaskUITests/Pods-MobimeoTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BE5F19C040BCE49CBF4342B5 /* Pods-MobimeoTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobimeoTaskTests.release.xcconfig"; path = "Target Support Files/Pods-MobimeoTaskTests/Pods-MobimeoTaskTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,13 +155,13 @@
 		4195CD67226C64C7009933FE /* MobimeoTask */ = {
 			isa = PBXGroup;
 			children = (
+				41CF3609226E5585000C9848 /* View */,
 				4195CDAE226DA24F009933FE /* ViewModel */,
 				4195CDAB226DA00C009933FE /* Cells */,
 				4195CDA0226C67AB009933FE /* Model */,
 				4195CD9D226C66C1009933FE /* Utilities */,
 				4195CD96226C6515009933FE /* Networking */,
 				4195CD68226C64C7009933FE /* AppDelegate.swift */,
-				4195CD6A226C64C7009933FE /* GiphyTableViewController.swift */,
 				4195CD6C226C64C7009933FE /* Main.storyboard */,
 				4195CD6F226C64C9009933FE /* Assets.xcassets */,
 				4195CD71226C64C9009933FE /* LaunchScreen.storyboard */,
@@ -227,8 +231,18 @@
 			children = (
 				4195CDB0226DA287009933FE /* GiphyTableViewModel.swift */,
 				4195CDB2226DADAF009933FE /* GiphyTableCellViewModel.swift */,
+				41CF360C226E56DC000C9848 /* GiphyDetailsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		41CF3609226E5585000C9848 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4195CD6A226C64C7009933FE /* GiphyTableViewController.swift */,
+				41CF360A226E55BB000C9848 /* GiphyDetailsViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		85AA11BD2780EDB140A73667 /* Frameworks */ = {
@@ -483,7 +497,9 @@
 				4195CDA4226C7E53009933FE /* Giphy.swift in Sources */,
 				4195CDB1226DA287009933FE /* GiphyTableViewModel.swift in Sources */,
 				4195CD69226C64C7009933FE /* AppDelegate.swift in Sources */,
+				41CF360B226E55BB000C9848 /* GiphyDetailsViewController.swift in Sources */,
 				4195CDB3226DADAF009933FE /* GiphyTableCellViewModel.swift in Sources */,
+				41CF360D226E56DC000C9848 /* GiphyDetailsViewModel.swift in Sources */,
 				4195CDA8226C806C009933FE /* GiphyList.swift in Sources */,
 				4195CD98226C6549009933FE /* NetworkClient.swift in Sources */,
 				4195CD9C226C6598009933FE /* GiphyAPI.swift in Sources */,
