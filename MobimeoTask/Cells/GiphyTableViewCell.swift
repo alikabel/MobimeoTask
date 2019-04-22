@@ -7,8 +7,15 @@
 //
 
 import UIKit
+import FLAnimatedImage
+import SDWebImageFLPlugin
 
 class GiphyTableViewCell: UITableViewCell {
-    
-    @IBOutlet private weak var giphyImageView: UIImageView?
+    @IBOutlet weak var giphyImageView: FLAnimatedImageView?
+    var viewModel: GiphyTableCellViewModel? {
+        didSet {
+            guard let cellViewModel = viewModel else { return }
+            cellViewModel.getGiphyImageView(imageView: giphyImageView)
+        }
+    }
 }

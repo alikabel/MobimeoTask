@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4195CD69226C64C7009933FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4195CD68226C64C7009933FE /* AppDelegate.swift */; };
-		4195CD6B226C64C7009933FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4195CD6A226C64C7009933FE /* ViewController.swift */; };
+		4195CD6B226C64C7009933FE /* GiphyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4195CD6A226C64C7009933FE /* GiphyTableViewController.swift */; };
 		4195CD6E226C64C7009933FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4195CD6C226C64C7009933FE /* Main.storyboard */; };
 		4195CD70226C64C9009933FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4195CD6F226C64C9009933FE /* Assets.xcassets */; };
 		4195CD73226C64C9009933FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4195CD71226C64C9009933FE /* LaunchScreen.storyboard */; };
@@ -24,6 +24,11 @@
 		4195CDA8226C806C009933FE /* GiphyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4195CDA7226C806C009933FE /* GiphyList.swift */; };
 		4195CDAA226C83E4009933FE /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4195CDA9226C83E4009933FE /* Images.swift */; };
 		4195CDAD226DA02E009933FE /* GiphyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4195CDAC226DA02E009933FE /* GiphyTableViewCell.swift */; };
+		4195CDB1226DA287009933FE /* GiphyTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4195CDB0226DA287009933FE /* GiphyTableViewModel.swift */; };
+		4195CDB3226DADAF009933FE /* GiphyTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4195CDB2226DADAF009933FE /* GiphyTableCellViewModel.swift */; };
+		A100E04B0046A6EAFB063113 /* Pods_MobimeoTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92F3460AD2E1EF07BA221B7 /* Pods_MobimeoTaskTests.framework */; };
+		A93BF4259DC8F086C2238ACE /* Pods_MobimeoTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE435EED15577E1F5BA63CAF /* Pods_MobimeoTaskUITests.framework */; };
+		D5C94DBA0402F8EEC50858A2 /* Pods_MobimeoTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D337A34A3220E17F6BD8FE88 /* Pods_MobimeoTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,9 +49,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1063B7144DE067CDA9F11408 /* Pods-MobimeoTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobimeoTask.release.xcconfig"; path = "Target Support Files/Pods-MobimeoTask/Pods-MobimeoTask.release.xcconfig"; sourceTree = "<group>"; };
+		32153E861382E2B3BC5EE8CA /* Pods-MobimeoTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobimeoTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-MobimeoTaskUITests/Pods-MobimeoTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4195CD65226C64C7009933FE /* MobimeoTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobimeoTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4195CD68226C64C7009933FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4195CD6A226C64C7009933FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4195CD6A226C64C7009933FE /* GiphyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyTableViewController.swift; sourceTree = "<group>"; };
 		4195CD6D226C64C7009933FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4195CD6F226C64C9009933FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4195CD72226C64C9009933FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,6 +74,15 @@
 		4195CDA7226C806C009933FE /* GiphyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyList.swift; sourceTree = "<group>"; };
 		4195CDA9226C83E4009933FE /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		4195CDAC226DA02E009933FE /* GiphyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyTableViewCell.swift; sourceTree = "<group>"; };
+		4195CDB0226DA287009933FE /* GiphyTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyTableViewModel.swift; sourceTree = "<group>"; };
+		4195CDB2226DADAF009933FE /* GiphyTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyTableCellViewModel.swift; sourceTree = "<group>"; };
+		B34B575C37DF8293EA6168E2 /* Pods-MobimeoTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobimeoTask.debug.xcconfig"; path = "Target Support Files/Pods-MobimeoTask/Pods-MobimeoTask.debug.xcconfig"; sourceTree = "<group>"; };
+		B82499351C9FA8A4AF8B2FB5 /* Pods-MobimeoTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobimeoTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-MobimeoTaskUITests/Pods-MobimeoTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BE5F19C040BCE49CBF4342B5 /* Pods-MobimeoTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobimeoTaskTests.release.xcconfig"; path = "Target Support Files/Pods-MobimeoTaskTests/Pods-MobimeoTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		D337A34A3220E17F6BD8FE88 /* Pods_MobimeoTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobimeoTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3961254405576799B387A74 /* Pods-MobimeoTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobimeoTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-MobimeoTaskTests/Pods-MobimeoTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E92F3460AD2E1EF07BA221B7 /* Pods_MobimeoTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobimeoTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE435EED15577E1F5BA63CAF /* Pods_MobimeoTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobimeoTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5C94DBA0402F8EEC50858A2 /* Pods_MobimeoTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A100E04B0046A6EAFB063113 /* Pods_MobimeoTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,12 +106,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A93BF4259DC8F086C2238ACE /* Pods_MobimeoTaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C702A61DCBC46A611749D2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B34B575C37DF8293EA6168E2 /* Pods-MobimeoTask.debug.xcconfig */,
+				1063B7144DE067CDA9F11408 /* Pods-MobimeoTask.release.xcconfig */,
+				E3961254405576799B387A74 /* Pods-MobimeoTaskTests.debug.xcconfig */,
+				BE5F19C040BCE49CBF4342B5 /* Pods-MobimeoTaskTests.release.xcconfig */,
+				32153E861382E2B3BC5EE8CA /* Pods-MobimeoTaskUITests.debug.xcconfig */,
+				B82499351C9FA8A4AF8B2FB5 /* Pods-MobimeoTaskUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4195CD5C226C64C7009933FE = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +133,8 @@
 				4195CD7C226C64CA009933FE /* MobimeoTaskTests */,
 				4195CD87226C64CA009933FE /* MobimeoTaskUITests */,
 				4195CD66226C64C7009933FE /* Products */,
+				3C702A61DCBC46A611749D2F /* Pods */,
+				85AA11BD2780EDB140A73667 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,12 +151,13 @@
 		4195CD67226C64C7009933FE /* MobimeoTask */ = {
 			isa = PBXGroup;
 			children = (
+				4195CDAE226DA24F009933FE /* ViewModel */,
 				4195CDAB226DA00C009933FE /* Cells */,
 				4195CDA0226C67AB009933FE /* Model */,
 				4195CD9D226C66C1009933FE /* Utilities */,
 				4195CD96226C6515009933FE /* Networking */,
 				4195CD68226C64C7009933FE /* AppDelegate.swift */,
-				4195CD6A226C64C7009933FE /* ViewController.swift */,
+				4195CD6A226C64C7009933FE /* GiphyTableViewController.swift */,
 				4195CD6C226C64C7009933FE /* Main.storyboard */,
 				4195CD6F226C64C9009933FE /* Assets.xcassets */,
 				4195CD71226C64C9009933FE /* LaunchScreen.storyboard */,
@@ -187,6 +222,25 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		4195CDAE226DA24F009933FE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4195CDB0226DA287009933FE /* GiphyTableViewModel.swift */,
+				4195CDB2226DADAF009933FE /* GiphyTableCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		85AA11BD2780EDB140A73667 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D337A34A3220E17F6BD8FE88 /* Pods_MobimeoTask.framework */,
+				E92F3460AD2E1EF07BA221B7 /* Pods_MobimeoTaskTests.framework */,
+				EE435EED15577E1F5BA63CAF /* Pods_MobimeoTaskUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -194,9 +248,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4195CD8D226C64CA009933FE /* Build configuration list for PBXNativeTarget "MobimeoTask" */;
 			buildPhases = (
+				1A88D77932F4F3B4A7EF8836 /* [CP] Check Pods Manifest.lock */,
 				4195CD61226C64C7009933FE /* Sources */,
 				4195CD62226C64C7009933FE /* Frameworks */,
 				4195CD63226C64C7009933FE /* Resources */,
+				FC0C0B7DA0B3BB20E033979F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -211,6 +267,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4195CD90226C64CA009933FE /* Build configuration list for PBXNativeTarget "MobimeoTaskTests" */;
 			buildPhases = (
+				BD5E0A68A140A1AB3604C2C4 /* [CP] Check Pods Manifest.lock */,
 				4195CD75226C64CA009933FE /* Sources */,
 				4195CD76226C64CA009933FE /* Frameworks */,
 				4195CD77226C64CA009933FE /* Resources */,
@@ -229,6 +286,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4195CD93226C64CA009933FE /* Build configuration list for PBXNativeTarget "MobimeoTaskUITests" */;
 			buildPhases = (
+				F371D84104D4C26DBCD65BFD /* [CP] Check Pods Manifest.lock */,
 				4195CD80226C64CA009933FE /* Sources */,
 				4195CD81226C64CA009933FE /* Frameworks */,
 				4195CD82226C64CA009933FE /* Resources */,
@@ -255,6 +313,11 @@
 				TargetAttributes = {
 					4195CD64226C64C7009933FE = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 					4195CD78226C64CA009933FE = {
 						CreatedOnToolsVersion = 10.1;
@@ -313,17 +376,114 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A88D77932F4F3B4A7EF8836 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobimeoTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD5E0A68A140A1AB3604C2C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobimeoTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F371D84104D4C26DBCD65BFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobimeoTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC0C0B7DA0B3BB20E033979F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobimeoTask/Pods-MobimeoTask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImageFLPlugin/SDWebImageFLPlugin.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImageFLPlugin.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobimeoTask/Pods-MobimeoTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4195CD61226C64C7009933FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4195CD9A226C6562009933FE /* EndpointType.swift in Sources */,
-				4195CD6B226C64C7009933FE /* ViewController.swift in Sources */,
+				4195CD6B226C64C7009933FE /* GiphyTableViewController.swift in Sources */,
 				4195CDA6226C7FDA009933FE /* OriginalGIF.swift in Sources */,
 				4195CDAA226C83E4009933FE /* Images.swift in Sources */,
 				4195CDA4226C7E53009933FE /* Giphy.swift in Sources */,
+				4195CDB1226DA287009933FE /* GiphyTableViewModel.swift in Sources */,
 				4195CD69226C64C7009933FE /* AppDelegate.swift in Sources */,
+				4195CDB3226DADAF009933FE /* GiphyTableCellViewModel.swift in Sources */,
 				4195CDA8226C806C009933FE /* GiphyList.swift in Sources */,
 				4195CD98226C6549009933FE /* NetworkClient.swift in Sources */,
 				4195CD9C226C6598009933FE /* GiphyAPI.swift in Sources */,
@@ -502,9 +662,11 @@
 		};
 		4195CD8E226C64CA009933FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B34B575C37DF8293EA6168E2 /* Pods-MobimeoTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MobimeoTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -512,6 +674,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Ali.MobimeoTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -519,9 +682,11 @@
 		};
 		4195CD8F226C64CA009933FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1063B7144DE067CDA9F11408 /* Pods-MobimeoTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MobimeoTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -529,6 +694,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Ali.MobimeoTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -536,6 +702,7 @@
 		};
 		4195CD91226C64CA009933FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3961254405576799B387A74 /* Pods-MobimeoTaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -556,6 +723,7 @@
 		};
 		4195CD92226C64CA009933FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE5F19C040BCE49CBF4342B5 /* Pods-MobimeoTaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -576,6 +744,7 @@
 		};
 		4195CD94226C64CA009933FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32153E861382E2B3BC5EE8CA /* Pods-MobimeoTaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -595,6 +764,7 @@
 		};
 		4195CD95226C64CA009933FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B82499351C9FA8A4AF8B2FB5 /* Pods-MobimeoTaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

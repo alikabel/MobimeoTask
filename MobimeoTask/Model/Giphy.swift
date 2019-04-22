@@ -9,5 +9,5 @@
 import Foundation
 
 struct Giphy: Codable {
-    let images: ImagesGIF?
+    let images: Images?
 }
