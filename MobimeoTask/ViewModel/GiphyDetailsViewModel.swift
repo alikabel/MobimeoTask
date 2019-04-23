@@ -20,7 +20,7 @@ class GiphyDetailsViewModel {
         self.rating = rating
     }
     
-    func getGiphyImageView(imageView: FLAnimatedImageView?) {
+    func setGiphyImageView(imageView: FLAnimatedImageView?) {
         imageView?.sd_setImage(with: URL(string:urlString ?? ""))
     }
 }

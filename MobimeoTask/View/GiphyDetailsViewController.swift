@@ -19,8 +19,12 @@ class GiphyDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let detailsViewModel = detailsViewModel else { return }
-        ratingLabel?.text = String(format: "Rating: %@", detailsViewModel.rating?.uppercased() ?? "")
-        userNameLabel?.text = String(format: "UserName: %@", detailsViewModel.userName?.uppercased() ?? "")
-        giphyImageView?.sd_setImage(with: URL(string: detailsViewModel.urlString ?? ""))
+        if let userName = detailsViewModel.userName, userName != "" {
+            userNameLabel?.text = String(format: "UserName: %@", userName.uppercased())
+        }
+        if let rating = detailsViewModel.rating {
+            ratingLabel?.text = String(format: "Rating: %@", rating.uppercased())
+        }
+        detailsViewModel.setGiphyImageView(imageView: giphyImageView)
     }
 }

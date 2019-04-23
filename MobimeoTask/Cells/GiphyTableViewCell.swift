@@ -15,7 +15,7 @@ class GiphyTableViewCell: UITableViewCell {
     var viewModel: GiphyTableCellViewModel? {
         didSet {
             guard let cellViewModel = viewModel else { return }
-            cellViewModel.getGiphyImageView(imageView: self.giphyImageView)
+            cellViewModel.setGiphyImageView(imageView: giphyImageView)
         }
     }
 }
